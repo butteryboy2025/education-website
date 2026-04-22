@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Code Collaboration</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="post.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Post body starts from here -->
+	<div id="blog-container">
+		<div class="blogs blogpost">
+			<div class="post">
+				<img src="img/b1.jpg" alt="">
+				<h3>Collaborating on a Web Page</h3>
+				<p>
+					Sometimes, help with coding can be great. When you are creating a big web page, some help would be nice. By sharing your code or adding a team on places like Netlify and Vercel, you can create your web pages with a team.
+				</p>
+
+				<p>
+					Web pages by yourself can take a long time depending on how big your page is. With a team, however, this job becomes a lot easier. Now, you won't have to know every single type of code to make a web page; your team can help you with that. When you become tired, your team can motivate you to continue working on your web page.
+				</p>
+
+				<p>
+				  On sites with teams, like Github, Vercel, and Netlify, you and your team can divide up the code, letting the most skilled people do what type of code they are most skilled at, and distributing the code so not one person has to work for too long. With a team, web pages become easier to build and less time consuming.
+        </p>
+				<br>
+
+				<a href="post-6.html">Read Next</a>
+			</div>
+		</div>
+	</div>
+	<!-- Post body ends from here -->
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Top Courses</h3>
+			<li>Starting HTML</li>
+			<li>Javascript For Beginners</li>
+			<li>CSS For Beginners</li>
+			<li>Beginner Web Design</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Features</h3>
+			<li>Online Courses</li>
+			<li>Scholarship Programs</li>
+			<li>Global Certification</li>
+		
+		</div>
+
+		<div class="footer-col">
+			<h3>People</h3>
+			<li>Ema Ernik</li>
+			<li>Jason Chua</li>
+			<li>Maalik Halper</li>
+			<li>Jennifer Lopez</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>You can trust us. we only send promo offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2023 All rights reserved | This template is made by <a href="https://atulcodex.com" target="_blank">atulcodex</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
