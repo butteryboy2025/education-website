@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI in web development</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="post.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Post body starts from here -->
+	<div id="blog-container">
+		<div class="blogs blogpost">
+			<div class="post">
+				<img src="img/b1.jpg" alt="">
+				<h3>The Use of AI in Your Webpage</h3>
+				<p>
+					AI can be used in web pages for many reasons: to make your code look better, to make your code work better, and just to get your code.
+				</p>
+
+				<p>
+					Some coding sites will have an feature where you can "Beautify" your code. What it means, is that it will change your code to look better while you're writing it, and will change your code to leave out the not needed stuff.
+				</p>
+
+				<p>
+				  Creating a web page through AI is very simple. All you have to do is give the AI a prompt, and it will create an entire website based on what you asked it to do. Also, if you need just a little bit of help, like you need to know how to create a list, AI will give the lines of code you need to create a list. 
+        </p>
+				<br>
+
+				<a href="post-5.html">Read Next</a>
+			</div>
+		</div>
+	</div>
+	<!-- Post body ends from here -->
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Top Courses</h3>
+			<li>Starting HTML</li>
+			<li>Javascript For Beginners</li>
+			<li>CSS For Beginners</li>
+			<li>Beginner Web Design</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Features</h3>
+			<li>Online Courses</li>
+			<li>Scholarship Programs</li>
+			<li>Global Certification</li>
+		
+		</div>
+
+		<div class="footer-col">
+			<h3>People</h3>
+			<li>Ema Ernik</li>
+			<li>Jason Chua</li>
+			<li>Maalik Halper</li>
+			<li>Jennifer Lopez</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>You can trust us. we only send promo offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2023 All rights reserved | This template is made by <a href="https://atulcodex.com" target="_blank">atulcodex</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
