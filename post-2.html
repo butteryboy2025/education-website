@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best Deployment Websites</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="post.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Post body starts from here -->
+	<div id="blog-container">
+		<div class="blogs blogpost">
+			<div class="post">
+				<img src="img/b1.jpg" alt="">
+				<h3>Best Options For Website Deployment</h3>
+                <h4>Github</h4>
+				<p>
+					Github is create place to code, and can be used to deploy your website. If you go to settings, hit pages, and then hit the choose a branch, and hit main, your website will be deployed at your-username.github.io/your-project.
+				</p>
+            
+                <h4>Vercel</h4>
+				<p>
+					Vercel is my second favorite, it is very easy to deploy your website, and you can edit your code as well. Also, Vercel has AI features that you can get code from.
+				</p>
+                <h4>Netlify</h4>
+				<p>
+					Netlify is also a great deployment site. It is very similar to Vercel, and you can create websites for free with an AI.
+				</p>
+
+				<br>
+
+				<a href="#">Read Next</a>
+			</div>
+		</div>
+	</div>
+	<!-- Post body ends from here -->
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Top Courses</h3>
+			<li>Starting HTML</li>
+			<li>Javascript For Beginners</li>
+			<li>CSS For Beginners</li>
+			<li>Beginner Web Design</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Features</h3>
+			<li>Online Courses</li>
+			<li>Scholarship Programs</li>
+			<li>Global Certification</li>
+		
+		</div>
+
+		<div class="footer-col">
+			<h3>People</h3>
+			<li>Ema Ernik</li>
+			<li>Jason Chua</li>
+			<li>Maalik Halper</li>
+			<li>Jennifer Lopez</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>You can trust us. we only send promo offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2023 All rights reserved | This template is made by <a href="https://atulcodex.com" target="_blank">atulcodex</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
